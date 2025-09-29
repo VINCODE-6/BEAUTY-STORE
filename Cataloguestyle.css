@@ -1,0 +1,108 @@
+body{
+    background-color:whitesmoke;
+    color:black;
+    line-height:1.6em;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+#main-header{
+    background-color:peachpuff;
+    color:black;
+    padding:10px;
+    width:100%;
+}
+
+h1{
+    text-align:center;
+    font-style:italic;
+
+}
+
+h2{
+    margin-left:20px;
+    background-color:pink;
+    width:100%;
+    padding:10px;
+    margin:0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left:20px;
+    margin-top:10px;
+    gap: 20px;
+}
+
+.weave-item img {
+  width: 90%;
+  height: 250px;
+  object-fit: cover; /* crops neatly */
+  border-radius: 6px;
+}
+
+
+.accessory-item img {
+  width: 90%;
+  height: 250px;
+  object-fit: cover; /* crops neatly */
+  border-radius: 6px;
+}
+
+
+.price {
+    margin-top:1px;
+    text-align:justify;
+    font-weight:bold; 
+}
+
+.price-row {
+  display: flex;                  /* make price + button sit in one line */
+  justify-content: space-between; /* push them apart (price left, button right) */
+  align-items: center;            /* keep them aligned vertically */
+  max-width: 200px;               /* match your image width */
+}
+
+.interested-button {
+    display:inline-block;
+    padding:3px 3px;
+    background:black;
+    color:white;
+    border-radius:5px;
+    text-decoration:none;
+    margin-top:0px;
+    text-align:justify;
+    justify-content:space-evenly;
+}
+
+.contact-btn img {
+  position: fixed;           /* stays in place even when you scroll */
+  bottom:40px;              /* distance from bottom */
+  right:-1150px;               /* distance from right edge */
+  width:50px;   /* size of the button */
+  height:50px;
+  border-radius:50%; /* makes it round */
+  padding:5px;
+  object-fit:cover;
+  margin-right:80%;
+}
+
+.interested-button:hover{
+	background:pink;
+}
+
+#products-section {
+  width:80%;
+  margin-left:10%;
+  margin-top:20px;
+}
+
+@media(max-width:768px) {
+	product-grid{
+		grid-template-columns:1fr;
+	}
+}
+
+  
